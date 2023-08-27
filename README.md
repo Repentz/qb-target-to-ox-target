@@ -7,7 +7,7 @@ Features:
 - Gangs
 - Multiple options arrays
 - job and gang ranks
-- converts width/length to size vec3 ( DEFAULT VALUE OF 3.5 SET TO WIDTH YOU WILL HAVE TO CHANGE THIS YOURSELF )
+- converts width/length to size vec3 ( **DEFAULT VALUE OF 3.5 SET TO THIRD VALUE YOU WILL HAVE TO CHANGE THIS YOURSELF** )
   
 - if event = "qb-shops:247clerk", then its deleted -> it becomes:
 onSelect = function()
@@ -34,7 +34,7 @@ As is, to access it just go to: C:\Users\YOURNAME\AppData\Local\FiveM\FiveM.app\
 Example:
 ----------------------------------------------------------------------------------------------
 Input:
-
+```
 ["SASTHelicopter"] = {
     name = "SASTHelicopter",
     coords = vector3(-482.58, 5980.66, 31.3),
@@ -58,9 +58,9 @@ Input:
     },
     distance = 1.5
 },
-
+```
 Output:
-
+```
 exports.ox_target:addBoxZone({
     name = "SASTHelicopter",
     coords = vec3(-482.579987, 5980.660156, 31.299999),
@@ -78,3 +78,4 @@ exports.ox_target:addBoxZone({
         },
     },
 })
+```
